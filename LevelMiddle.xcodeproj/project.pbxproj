@@ -18,6 +18,8 @@
 		A59D8E8818262C250062DC43 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59D8E6718262C250062DC43 /* Cocoa.framework */; };
 		A59D8E9018262C250062DC43 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A59D8E8E18262C250062DC43 /* InfoPlist.strings */; };
 		A59D8E9218262C250062DC43 /* LevelMiddleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A59D8E9118262C250062DC43 /* LevelMiddleTests.m */; };
+		A5A00B371826A3EC00CAD0E6 /* LevelDB.mm in Sources */ = {isa = PBXBuildFile; fileRef = A5A00B361826A3EC00CAD0E6 /* LevelDB.mm */; };
+		A5A00B381826A43700CAD0E6 /* libleveldb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A00B331826A3D500CAD0E6 /* libleveldb.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,22 @@
 		A59D8E8D18262C250062DC43 /* LevelMiddleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LevelMiddleTests-Info.plist"; sourceTree = "<group>"; };
 		A59D8E8F18262C250062DC43 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A59D8E9118262C250062DC43 /* LevelMiddleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LevelMiddleTests.m; sourceTree = "<group>"; };
+		A5A00B261826A3D500CAD0E6 /* c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c.h; sourceTree = "<group>"; };
+		A5A00B271826A3D500CAD0E6 /* cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cache.h; sourceTree = "<group>"; };
+		A5A00B281826A3D500CAD0E6 /* comparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comparator.h; sourceTree = "<group>"; };
+		A5A00B291826A3D500CAD0E6 /* db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = db.h; sourceTree = "<group>"; };
+		A5A00B2A1826A3D500CAD0E6 /* env.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = env.h; sourceTree = "<group>"; };
+		A5A00B2B1826A3D500CAD0E6 /* filter_policy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filter_policy.h; sourceTree = "<group>"; };
+		A5A00B2C1826A3D500CAD0E6 /* iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iterator.h; sourceTree = "<group>"; };
+		A5A00B2D1826A3D500CAD0E6 /* options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = options.h; sourceTree = "<group>"; };
+		A5A00B2E1826A3D500CAD0E6 /* slice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slice.h; sourceTree = "<group>"; };
+		A5A00B2F1826A3D500CAD0E6 /* status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = status.h; sourceTree = "<group>"; };
+		A5A00B301826A3D500CAD0E6 /* table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = table.h; sourceTree = "<group>"; };
+		A5A00B311826A3D500CAD0E6 /* table_builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = table_builder.h; sourceTree = "<group>"; };
+		A5A00B321826A3D500CAD0E6 /* write_batch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = write_batch.h; sourceTree = "<group>"; };
+		A5A00B331826A3D500CAD0E6 /* libleveldb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libleveldb.a; sourceTree = "<group>"; };
+		A5A00B351826A3EC00CAD0E6 /* LevelDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelDB.h; sourceTree = "<group>"; };
+		A5A00B361826A3EC00CAD0E6 /* LevelDB.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LevelDB.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5A00B381826A43700CAD0E6 /* libleveldb.a in Frameworks */,
 				A59D8E6818262C250062DC43 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +95,7 @@
 		A59D8E5B18262C250062DC43 = {
 			isa = PBXGroup;
 			children = (
+				A5A00B231826A3D500CAD0E6 /* leveldb-library */,
 				A59D8E6D18262C250062DC43 /* LevelMiddle */,
 				A59D8E8B18262C250062DC43 /* LevelMiddleTests */,
 				A59D8E6618262C250062DC43 /* Frameworks */,
@@ -115,6 +135,8 @@
 		A59D8E6D18262C250062DC43 /* LevelMiddle */ = {
 			isa = PBXGroup;
 			children = (
+				A5A00B351826A3EC00CAD0E6 /* LevelDB.h */,
+				A5A00B361826A3EC00CAD0E6 /* LevelDB.mm */,
 				A59D8E7918262C250062DC43 /* AppDelegate.h */,
 				A59D8E7A18262C250062DC43 /* AppDelegate.m */,
 				A59D8E7C18262C250062DC43 /* MainMenu.xib */,
@@ -152,6 +174,43 @@
 				A59D8E8E18262C250062DC43 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5A00B231826A3D500CAD0E6 /* leveldb-library */ = {
+			isa = PBXGroup;
+			children = (
+				A5A00B241826A3D500CAD0E6 /* include */,
+				A5A00B331826A3D500CAD0E6 /* libleveldb.a */,
+			);
+			path = "leveldb-library";
+			sourceTree = "<group>";
+		};
+		A5A00B241826A3D500CAD0E6 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A5A00B251826A3D500CAD0E6 /* leveldb */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		A5A00B251826A3D500CAD0E6 /* leveldb */ = {
+			isa = PBXGroup;
+			children = (
+				A5A00B261826A3D500CAD0E6 /* c.h */,
+				A5A00B271826A3D500CAD0E6 /* cache.h */,
+				A5A00B281826A3D500CAD0E6 /* comparator.h */,
+				A5A00B291826A3D500CAD0E6 /* db.h */,
+				A5A00B2A1826A3D500CAD0E6 /* env.h */,
+				A5A00B2B1826A3D500CAD0E6 /* filter_policy.h */,
+				A5A00B2C1826A3D500CAD0E6 /* iterator.h */,
+				A5A00B2D1826A3D500CAD0E6 /* options.h */,
+				A5A00B2E1826A3D500CAD0E6 /* slice.h */,
+				A5A00B2F1826A3D500CAD0E6 /* status.h */,
+				A5A00B301826A3D500CAD0E6 /* table.h */,
+				A5A00B311826A3D500CAD0E6 /* table_builder.h */,
+				A5A00B321826A3D500CAD0E6 /* write_batch.h */,
+			);
+			path = leveldb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +313,7 @@
 			files = (
 				A59D8E7B18262C250062DC43 /* AppDelegate.m in Sources */,
 				A59D8E7418262C250062DC43 /* main.m in Sources */,
+				A5A00B371826A3EC00CAD0E6 /* LevelDB.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,9 +444,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LevelMiddle/LevelMiddle-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$SOURCE_ROOT/leveldb-library/include",
+				);
 				INFOPLIST_FILE = "LevelMiddle/LevelMiddle-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/shuo/Project/Objective-C/LevelMiddle/leveldb-library",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -397,9 +467,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LevelMiddle/LevelMiddle-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$SOURCE_ROOT/leveldb-library/include",
+				);
 				INFOPLIST_FILE = "LevelMiddle/LevelMiddle-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/shuo/Project/Objective-C/LevelMiddle/leveldb-library",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -464,6 +544,7 @@
 				A59D8E9718262C260062DC43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A59D8E9818262C260062DC43 /* Build configuration list for PBXNativeTarget "LevelMiddleTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +553,7 @@
 				A59D8E9A18262C260062DC43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

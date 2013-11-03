@@ -10,9 +10,27 @@
 
 @implementation AppDelegate
 
+@synthesize dbpath;
+@synthesize items;
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+}
+
+-(IBAction)chooseDBPath:(id)sender {
+    NSOpenPanel* panel = [NSOpenPanel openPanel];
+    [panel setCanChooseDirectories:YES];
+    [panel setCanChooseFiles:NO];
+    
+    [panel beginWithCompletionHandler:^(NSInteger result){
+        if (result == NSFileHandlingPanelOKButton) {
+            NSURL*  theDoc = [[panel URLs] objectAtIndex:0];
+            NSLog(@"%@", [theDoc absoluteString]);
+            self.dbpath = [theDoc absoluteString];
+        }
+        
+    }];
 }
 
 @end

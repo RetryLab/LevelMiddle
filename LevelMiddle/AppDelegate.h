@@ -10,6 +10,12 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property NSArray *items;
+@property NSString *dbpath;
 
+@property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSTabView *mainTabView;
+
+
+-(IBAction)chooseDBPath:(id)sender;
 @end
