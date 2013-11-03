@@ -10,7 +10,7 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-@property NSArray *items;
+@property NSDictionary *items;
 @property NSString *dbpath;
 
 @property (assign) IBOutlet NSWindow *window;

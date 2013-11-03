@@ -700,6 +700,13 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                <connections>
+                                                                    <binding destination="Qv9-mi-GIf" name="value" keyPath="arrangedObjects.key" id="DGO-Y9-2fL">
+                                                                        <dictionary key="options">
+                                                                            <bool key="NSValidatesImmediately" value="YES"/>
+                                                                        </dictionary>
+                                                                    </binding>
+                                                                </connections>
                                                             </tableColumn>
                                                             <tableColumn width="411" minWidth="40" maxWidth="1000" id="9B3-UC-mvb">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Value">
@@ -713,6 +720,13 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                <connections>
+                                                                    <binding destination="Qv9-mi-GIf" name="value" keyPath="arrangedObjects.value" id="0n0-hY-4gg">
+                                                                        <dictionary key="options">
+                                                                            <bool key="NSValidatesImmediately" value="YES"/>
+                                                                        </dictionary>
+                                                                    </binding>
+                                                                </connections>
                                                             </tableColumn>
                                                         </tableColumns>
                                                     </tableView>
@@ -723,7 +737,7 @@
                                                 <rect key="frame" x="1" y="1" width="0.0" height="16"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
-                                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="37" horizontal="NO" id="jKT-ws-Wsh">
+                                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="jKT-ws-Wsh">
                                                 <rect key="frame" x="-15" y="17" width="16" height="0.0"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
@@ -815,6 +829,11 @@
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
+        <dictionaryController objectClassName="_NSControllerKeyValuePair" id="Qv9-mi-GIf">
+            <connections>
+                <binding destination="494" name="contentDictionary" keyPath="self.items" id="uQM-zU-kRi"/>
+            </connections>
+        </dictionaryController>
         <userDefaultsController representsSharedInstance="YES" id="yhz-Iz-OUu"/>
     </objects>
 </document>
