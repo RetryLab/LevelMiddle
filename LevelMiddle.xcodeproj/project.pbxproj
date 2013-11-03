@@ -455,7 +455,7 @@
 				INFOPLIST_FILE = "LevelMiddle/LevelMiddle-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/shuo/Project/Objective-C/LevelMiddle/leveldb-library",
+					"$SOURCE_ROOT/leveldb-library",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -478,7 +478,7 @@
 				INFOPLIST_FILE = "LevelMiddle/LevelMiddle-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/shuo/Project/Objective-C/LevelMiddle/leveldb-library",
+					"$SOURCE_ROOT/leveldb-library",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
