@@ -651,21 +651,36 @@
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="228" width="800" height="500"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <value key="minSize" type="size" width="800" height="500"/>
             <view key="contentView" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="800" height="500"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <tabView fixedFrame="YES" type="bottomTabsBezelBorder" translatesAutoresizingMaskIntoConstraints="NO" id="bpa-Af-Jxi">
+                    <tabView type="bottomTabsBezelBorder" translatesAutoresizingMaskIntoConstraints="NO" id="bpa-Af-Jxi">
                         <rect key="frame" x="13" y="14" width="774" height="445"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qnp-JQ-bz2" secondAttribute="leading" constant="187" id="6Xe-Ct-TOh"/>
+                            <constraint firstItem="ACR-gW-xng" firstAttribute="top" secondItem="bpa-Af-Jxi" secondAttribute="top" constant="20" id="Dvk-Da-zvu"/>
+                            <constraint firstAttribute="trailing" secondItem="6bI-ZH-KQX" secondAttribute="leading" constant="187" id="Nih-ea-pRR"/>
+                            <constraint firstItem="Wce-MR-k68" firstAttribute="top" secondItem="bpa-Af-Jxi" secondAttribute="top" constant="52" id="OJX-lv-PyP"/>
+                            <constraint firstAttribute="bottom" secondItem="6yD-zi-RH5" secondAttribute="bottom" constant="36" id="VJK-o5-oKE"/>
+                            <constraint firstAttribute="trailing" secondItem="ACR-gW-xng" secondAttribute="leading" constant="187" id="ZrP-ut-VYd"/>
+                            <constraint firstAttribute="trailing" secondItem="Wce-MR-k68" secondAttribute="leading" constant="187" id="gBn-Qe-Gf6"/>
+                            <constraint firstItem="6yD-zi-RH5" firstAttribute="top" secondItem="bpa-Af-Jxi" secondAttribute="top" constant="20" id="jZr-sL-uCe"/>
+                            <constraint firstItem="6yD-zi-RH5" firstAttribute="leading" secondItem="bpa-Af-Jxi" secondAttribute="leading" constant="20" id="n0F-TT-deu"/>
+                            <constraint firstAttribute="trailing" secondItem="6yD-zi-RH5" secondAttribute="trailing" constant="205" id="od8-2j-H1e"/>
+                            <constraint firstItem="6bI-ZH-KQX" firstAttribute="top" secondItem="bpa-Af-Jxi" secondAttribute="top" constant="118" id="t80-LZ-5Ft"/>
+                            <constraint firstItem="qnp-JQ-bz2" firstAttribute="top" secondItem="bpa-Af-Jxi" secondAttribute="top" constant="85" id="xMJ-EG-6u5"/>
+                        </constraints>
                         <font key="font" metaFont="system"/>
                         <tabViewItems>
                             <tabViewItem label="query" identifier="1" id="usi-LC-weh">
-                                <view key="view" ambiguous="YES" id="uDo-GL-jrc">
+                                <view key="view" id="uDo-GL-jrc">
                                     <rect key="frame" x="10" y="7" width="754" height="407"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <searchField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ACR-gW-xng">
+                                        <searchField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ACR-gW-xng">
                                             <rect key="frame" x="570" y="368" width="167" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="Key" usesSingleLineMode="YES" bezelStyle="round" id="nOP-zy-EvQ">
@@ -674,10 +689,10 @@
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </searchFieldCell>
                                         </searchField>
-                                        <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yD-zi-RH5">
+                                        <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yD-zi-RH5">
                                             <rect key="frame" x="17" y="11" width="535" height="379"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <clipView key="contentView" ambiguous="YES" misplaced="YES" id="rAo-fk-gWU">
+                                            <clipView key="contentView" id="rAo-fk-gWU">
                                                 <rect key="frame" x="1" y="17" width="533" height="361"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
@@ -746,23 +761,29 @@
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </tableHeaderView>
                                         </scrollView>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6bI-ZH-KQX">
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6bI-ZH-KQX">
                                             <rect key="frame" x="564" y="264" width="179" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="Remove" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="dRe-Cy-m0v">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="remove:" target="Qv9-mi-GIf" id="NIg-pK-8gO"/>
+                                            </connections>
                                         </button>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qnp-JQ-bz2">
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qnp-JQ-bz2">
                                             <rect key="frame" x="564" y="297" width="179" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="Add Item" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="n6d-k7-ZuA">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="add:" target="Qv9-mi-GIf" id="lOp-gM-X2d"/>
+                                            </connections>
                                         </button>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wce-MR-k68">
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Wce-MR-k68">
                                             <rect key="frame" x="564" y="330" width="179" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="Refresh" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zCv-tb-95W">
@@ -771,6 +792,12 @@
                                             </buttonCell>
                                         </button>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="qnp-JQ-bz2" secondAttribute="trailing" constant="17" id="1uV-82-UE9"/>
+                                        <constraint firstAttribute="trailing" secondItem="ACR-gW-xng" secondAttribute="trailing" constant="17" id="cwP-Zy-uQD"/>
+                                        <constraint firstAttribute="trailing" secondItem="6bI-ZH-KQX" secondAttribute="trailing" constant="17" id="i7x-g4-Jf1"/>
+                                        <constraint firstAttribute="trailing" secondItem="Wce-MR-k68" secondAttribute="trailing" constant="17" id="yo9-rh-SEX"/>
+                                    </constraints>
                                 </view>
                             </tabViewItem>
                             <tabViewItem label="import" identifier="2" id="Kad-eS-hne">
@@ -787,7 +814,7 @@
                             </tabViewItem>
                         </tabViewItems>
                     </tabView>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RcI-Jo-Vht">
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RcI-Jo-Vht">
                         <rect key="frame" x="20" y="469" width="51" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Source:" id="NdR-kK-uxw">
@@ -796,8 +823,8 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hzM-Fy-LDT">
-                        <rect key="frame" x="76" y="465" width="621" height="22"/>
+                    <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hzM-Fy-LDT">
+                        <rect key="frame" x="79" y="465" width="618" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" focusRingType="none" placeholderString="path to db file" drawsBackground="YES" id="Ema-u7-zcT">
                             <font key="font" metaFont="system"/>
@@ -808,7 +835,7 @@
                             <binding destination="494" name="value" keyPath="self.dbpath" id="B4W-Rg-ds1"/>
                         </connections>
                     </textField>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c96-ju-tHm">
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c96-ju-tHm">
                         <rect key="frame" x="699" y="458" width="87" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Choose" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="tZn-wk-XsN">
@@ -820,20 +847,31 @@
                         </connections>
                     </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="RcI-Jo-Vht" firstAttribute="top" secondItem="c96-ju-tHm" secondAttribute="top" id="82z-lo-rdg"/>
+                    <constraint firstAttribute="trailing" secondItem="c96-ju-tHm" secondAttribute="trailing" constant="20" symbolic="YES" id="Cs3-52-8Yn"/>
+                    <constraint firstItem="bpa-Af-Jxi" firstAttribute="top" secondItem="372" secondAttribute="top" constant="45" id="FCs-vN-43e"/>
+                    <constraint firstAttribute="trailing" secondItem="bpa-Af-Jxi" secondAttribute="trailing" constant="20" id="Mas-QM-Aie"/>
+                    <constraint firstAttribute="bottom" secondItem="bpa-Af-Jxi" secondAttribute="bottom" constant="20" id="RXI-ST-alv"/>
+                    <constraint firstItem="c96-ju-tHm" firstAttribute="leading" secondItem="hzM-Fy-LDT" secondAttribute="trailing" constant="8" symbolic="YES" id="W4r-Wx-o1a"/>
+                    <constraint firstItem="hzM-Fy-LDT" firstAttribute="bottom" secondItem="c96-ju-tHm" secondAttribute="bottom" id="WLe-Ht-bIn"/>
+                    <constraint firstItem="RcI-Jo-Vht" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="22" id="ae6-uv-39C"/>
+                    <constraint firstItem="hzM-Fy-LDT" firstAttribute="leading" secondItem="RcI-Jo-Vht" secondAttribute="trailing" constant="10" id="gkg-dS-k7u"/>
+                    <constraint firstItem="hzM-Fy-LDT" firstAttribute="top" secondItem="372" secondAttribute="top" constant="13" id="gmd-oo-iCa"/>
+                    <constraint firstItem="bpa-Af-Jxi" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="20" id="mXD-c6-Yva"/>
+                </constraints>
             </view>
         </window>
         <customObject id="494" customClass="AppDelegate">
             <connections>
+                <outlet property="dict" destination="Qv9-mi-GIf" id="ICY-va-dAw"/>
+                <outlet property="dictController" destination="Qv9-mi-GIf" id="25B-A7-Q46"/>
                 <outlet property="mainTabView" destination="bpa-Af-Jxi" id="Kjj-Sa-PgI"/>
                 <outlet property="window" destination="371" id="532"/>
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
-        <dictionaryController objectClassName="_NSControllerKeyValuePair" id="Qv9-mi-GIf">
-            <connections>
-                <binding destination="494" name="contentDictionary" keyPath="self.items" id="uQM-zU-kRi"/>
-            </connections>
-        </dictionaryController>
+        <dictionaryController objectClassName="_NSControllerKeyValuePair" id="Qv9-mi-GIf"/>
         <userDefaultsController representsSharedInstance="YES" id="yhz-Iz-OUu"/>
     </objects>
 </document>

@@ -11,15 +11,11 @@
 @implementation AppDelegate
 
 @synthesize dbpath;
-@synthesize items;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
-    [self willChangeValueForKey:@"items"];
-    items = [NSDictionary dictionaryWithObjectsAndKeys:
-             @"value1", @"first", @"value2", @"second",  @"value3", @"last", nil];;
-    [self didChangeValueForKey:@"items"];
+    id obj = [_dictController newObject];
+    [_dictController addObject:obj];
 }
 
 -(IBAction)chooseDBPath:(id)sender {
